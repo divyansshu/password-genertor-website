@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="password-generator">
+            <h2>Password Generator</h2>
+
+    <!-- created a box to show password -->
+    <div class="password">
+        <p id="passwordBox"></p>
+        <i class="far fa-clipboard" onclick="copyPassword()">copy</i>
+    </div>
+
+    <!-- created an input box for taking password length -->
+    <div>
+        <label for="length">Length</label>
+        <input type="number" id="length" min="8" max="20" value="8">
+    </div>
+
+    <!-- created a checkbox for selecting the type of characters in the password -->
+    <div>
+        <label for="symbol">Include symbol</label>
+        <input type="checkbox" id="symbol" checked>
+    </div>
+    <div>
+        <label for="number">Include number</label>
+        <input type="checkbox" id="number" checked>
+    </div>
+    <div>
+        <label for="lowercase">Include lowercase</label>
+        <input type="checkbox" id="lowerCase" checked>
+    </div>
+    <div>
+        <label for="uppercase">Include uppercase</label>
+        <input type="checkbox" id="upperCase" checked>
+    </div>
+
+    <!-- created a password generator button -->
+    <button onclick="createPassword()">Get Random Password</button>
+</div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
